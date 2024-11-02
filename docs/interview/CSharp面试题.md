@@ -1,14 +1,14 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## C#面试题
 
 
 
-### 1，以下是用C#实现找到数组中第二大的数字的算法：
+### 1. 以下是用C#实现找到数组中第二大的数字的算法：
 
-```c#
+```c
 int[] arr = { 10, 5, 20, 8, 12, 15 };
 Console.WriteLine(f(arr));
 
@@ -36,9 +36,9 @@ static int f(int[] n)
 
 
 
-### 2，以下是一个用C#编写的函数，用来判断一个字符串是否是回文。
+### 2. 以下是一个用C#编写的函数，用来判断一个字符串是否是回文。
 
-```c#
+```c
 static bool f(string s)
 {
 	int left = 0;
@@ -60,9 +60,9 @@ static bool f(string s)
 
 
 
-### 3，写一个函数，反转输入的字符串。
+### 3. 写一个函数，反转输入的字符串。
 
-```c#
+```c
 string input2 = "Hello";
 Console.WriteLine(f(input2));
 
@@ -76,9 +76,9 @@ static string f(string s)
 
 
 
-### 4，判断字符串是否是回文
+### 4. 判断字符串是否是回文
 
-```c#
+```c
 string input3 = "racecar";
 Console.WriteLine(f(input3));
 
@@ -100,9 +100,9 @@ static bool f(string s)
 
 
 
-### 5，寻找数组中的最大值和最小值
+### 5. 寻找数组中的最大值和最小值
 
-```c#
+```c
 int[] array = { 3, 5, 1, 9, 2 };
 int max, min;
 f(array, out max, out min);
@@ -122,9 +122,9 @@ static void f(int[] a, out int max, out int min)
 
 
 
-### 6，实现斐波那契数列
+### 6. 实现斐波那契数列
 
-```c#
+```c
 int n = 10;
 Console.WriteLine(f(n));
 
@@ -149,9 +149,9 @@ static int f(int n)
 
 
 
-### 7，删除数组中的重复元素
+### 7. 删除数组中的重复元素
 
-```c#
+```c
 int[] array1 = { 1, 1, 2, 3, 3, 4, 5, 5 };
 int[] n = f(array1);
 Console.WriteLine(string.Join(", ", n));
@@ -166,9 +166,9 @@ static int[] f(int[] a)
 
 
 
-### 8，判断一个整数是否是素数
+### 8. 判断一个整数是否是素数
 
-```c#
+```c
 int num = 17;
 Console.WriteLine(f(num));
 
@@ -188,9 +188,9 @@ static bool f(int n)
 
 
 
-### 9，两数之和
+### 9. 两数之和
 
-```c#
+```c
 int[] array3 = { 2, 7, 11, 15 };
 int target = 9;
 int[] n = f(array3, target);
@@ -218,9 +218,9 @@ static int[] f(int[] n, int t)
 
 
 
-### 10，反转
+### 10. 反转
 
-```c#
+```c
 string words = "hello world";
 
 for (var i = 0; i < words.Length; i++)
@@ -231,9 +231,9 @@ for (var i = 0; i < words.Length; i++)
 
 
 
-### 11，合并两个有序数组
+### 11. 合并两个有序数组
 
-```c#
+```c
 int[] nums1 = { 1, 2, 3, 0, 0, 0 };
 int m = 3;  // nums1中的有效元素数量是3，即{1, 2, 3}
 int[] nums2 = { 2, 5, 6 };
@@ -274,9 +274,9 @@ static void f(int[] n1, int a, int[] n2, int b)
 
 
 
-### 12，移除元素
+### 12. 移除元素
 
-```c#
+```c
 int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
 int val = 2;
 int l = f(nums, val);
@@ -301,9 +301,9 @@ static int f(int[] n, int v)
 
 
 
-### 13，无重复字符的最长子串 无重复字符的最长子串
+### 13. 无重复字符的最长子串 无重复字符的最长子串
 
-```c#
+```c
 string s1 = "abcabcbb";
 string s2 = "bbbbb";
 string s3 = "pwwkew";
@@ -335,9 +335,9 @@ static int LengthOfLongestSubstring(string s)
 
 
 
-### 14，最后一个单词的长度
+### 14. 最后一个单词的长度
 
-```c#
+```c
 string s = "   fly me   to   the moon  ";
 Console.WriteLine(LengthOfLastWord(s)); // 输出 4
 
@@ -350,9 +350,9 @@ static int LengthOfLastWord(string s)
 
 
 
-### 15，判断回文数判断回文数
+### 15. 判断回文数判断回文数
 
-```c#
+```c
 int n = 121;
 Console.WriteLine(IsPalindrome(n));
 
@@ -377,9 +377,9 @@ static bool IsPalindrome(int n)
 
 
 
-### 16，两个数组的交集
+### 16. 两个数组的交集
 
-```c#
+```c
 int[] nums1 = { 1, 2, 2, 1 };
 int[] nums2 = { 2, 2 };
 int[] w = Intersection(nums1, nums2);
@@ -404,9 +404,9 @@ static int[] Intersection(int[] n1, int[] n2)
 
 
 
-### 17，打印五颗星（正三角形）
+### 17. 打印五颗星（正三角形）
 
-```c#
+```c
 for (var i = 0; i < 5; i++)
 {
 	for (var j = 0; j <= i; j++)
@@ -418,9 +418,9 @@ for (var i = 0; i < 5; i++)
 
 
 
-### 18，打印五颗星（倒三角形）
+### 18. 打印五颗星（倒三角形）
 
-```c#
+```c
 for (var i = 5; i >= 1; i--)
 {
 	for (var j = 1; j <= i; j++)
@@ -432,9 +432,9 @@ for (var i = 5; i >= 1; i--)
 
 
 
-### 19，打印矩形
+### 19. 打印矩形
 
-```c#
+```c
 for (var i = 0; i < 5; i++)
 {
 	for (var j = 0; j <= 5; j++)
@@ -446,9 +446,9 @@ for (var i = 0; i < 5; i++)
 
 
 
-### 20，计算数组的平均值
+### 20. 计算数组的平均值
 
-```c#
+```c
 int[] n = { 1, 2, 3, 4, 5 };
 Console.WriteLine(Average(n)); // 输出 "3"
 
@@ -467,9 +467,9 @@ static double Average(int[] n)
 
 
 
-### 21，数组元素的平方和
+### 21. 数组元素的平方和
 
-```c#
+```c
 int[] n = { 1, 2, 3 };
 Console.WriteLine(SumOfSquares(n)); // 输出 "14"
 
@@ -488,9 +488,9 @@ static int SumOfSquares(int[] n)
 
 
 
-### 22，问题：如何交换两个变量的值，不使用第三个变量？
+### 22. 问题：如何交换两个变量的值，不使用第三个变量？
 
-```c#
+```c
 int a = 5, b = 10;
 
 a = a ^ b;
@@ -503,9 +503,9 @@ Console.WriteLine(b);
 
 
 
-### 23，问题：如何判断一个数是偶数还是奇数？
+### 23. 问题：如何判断一个数是偶数还是奇数？
 
-```c#
+```c
 int number = 6;
 
 if (number % 2 == 0)
@@ -520,9 +520,9 @@ else
 
 
 
-### 24，找出字符串中第一个匹配项的下标
+### 24. 找出字符串中第一个匹配项的下标
 
-```c#
+```c
 string haystack1 = "sadbutsad";
 string needle1 = "sad";
 Console.WriteLine(StrStr(haystack1, needle1));  // Output: 0
@@ -535,9 +535,9 @@ static int StrStr(string s1, string s2)
 
 
 
-### 25，移动零
+### 25. 移动零
 
-```c#
+```c
 int[] nums1 = { 0, 1, 0, 3, 12 };
 MoveZeroes(nums1);
 Console.WriteLine(string.Join(", ", nums1));  // Output: 1, 3, 12, 0, 0
@@ -565,9 +565,9 @@ static void MoveZeroes(int[] n)
 
 
 
-### 26，多数元素
+### 26. 多数元素
 
-```c#
+```c
 int[] nums1 = { 3, 2, 3 };
 Console.WriteLine(MajorityElement(nums1));  // Output: 3
 
@@ -599,9 +599,9 @@ static int MajorityElement(int[] n)
 
 
 
-### 27，少数元素
+### 27. 少数元素
 
-```c#
+```c
 int[] nums1 = { 2, 2, 1 };
 Console.WriteLine(SingleNumber(nums1));  // Output: 1
 
@@ -619,9 +619,9 @@ static int SingleNumber(int[] n)
 
 
 
-### 28，删除数组中的重复元素
+### 28. 删除数组中的重复元素
 
-```c#
+```c
 int[] ns = { 1, 2, 6, 7, 34, 5, 2, 1, 5, 8 };
 int[] m = RemoveDuplicates(ns);
 Console.WriteLine(string.Join(", ", m));
@@ -634,9 +634,9 @@ static int[] RemoveDuplicates(int[] numbers)
 
 
 
-### 29，查找数组中重复的元素
+### 29. 查找数组中重复的元素
 
-```c#
+```c
 int[] ns = { 1, 2, 6, 7, 34, 5, 2, 1, 5, 8 };
 List<int> m = FindDuplicates(ns);
 Console.WriteLine(string.Join(", ", m));
@@ -664,9 +664,9 @@ static List<int> FindDuplicates(int[] numbers)
 
 
 
-### 30，计算字符串中的元音字母数量
+### 30. 计算字符串中的元音字母数量
 
-```c#
+```c
 string ss = "dsasdahgrev";
 Console.WriteLine(CountVowels(ss));
 
@@ -689,9 +689,9 @@ static int CountVowels(string str)
 
 
 
-### 31，检查数组是否为回文数组  前面学过了
+### 31. 检查数组是否为回文数组  前面学过了
 
-```c#
+```c
 int[] arr1 = { 1, 2, 3, 2, 1 };
 Console.WriteLine(IsPalindrome(arr1));  // Output: True
 
@@ -716,9 +716,9 @@ static bool IsPalindrome(int[] arr)
 
 
 
-### 32，冒泡排序
+### 32. 冒泡排序
 
-```c#
+```c
 int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
 Console.WriteLine("未排序的数组:");
 Console.WriteLine(string.Join(" ", arr));
@@ -747,9 +747,9 @@ static void BubbleSort(int[] arr)
 
 
 
-### 33，Longest Palindromic Substring 最长的反折子串
+### 33. Longest Palindromic Substring 最长的反折子串
 
-```c#
+```c
 string s = "babad";
 Console.WriteLine(LongestPalindrome(s));
 
@@ -783,9 +783,9 @@ static string GetLonger(string s1, string s2)
 
 
 
-### 34，Reverse Integer 反向整数
+### 34. Reverse Integer 反向整数
 
-```c#
+```c
 int n = 123;
 Console.WriteLine(Reverse(n));
 
@@ -806,9 +806,9 @@ static int Reverse(int x)
 
 
 
-### 35，Longest Common Prefix 最长通用前缀
+### 35. Longest Common Prefix 最长通用前缀
 
-```c#
+```c
 string[] strs = { "flower", "flow", "flight" };
 Console.WriteLine(LongestCommonPrefix(strs));
 

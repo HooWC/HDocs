@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # SQL面试 
@@ -29,11 +29,11 @@ sidebar_position: 3
 
 ## SELECT 语句
 
-```
+```sql
 SELECT * FROM Websites;
 ```
 
-```
+```sql
 SELECT name,country FROM Websites;
 ```
 
@@ -45,11 +45,11 @@ SELECT name,country FROM Websites;
 
 DISTINCT 关键词用于返回唯一不同的值。
 
-```
+```sql
 SELECT DISTINCT country FROM Websites;
 ```
 
-```
+```sql
 SELECT COUNT(DISTINCT Country) FROM Customers;
 ```
 
@@ -57,24 +57,24 @@ SELECT COUNT(DISTINCT Country) FROM Customers;
 
 ## SQL WHERE 语法
 
-```
+```sql
 SELECT * FROM Websites WHERE country='CN';
 
 SELECT * FROM Websites WHERE id=1;
 ```
 
 
-```
+```sql
 SELECT * FROM Products
 WHERE Price BETWEEN 50 AND 60;
 ```
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City IN ('Paris','London');
 ```
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City LIKE 's%';
 ```
@@ -83,7 +83,7 @@ WHERE City LIKE 's%';
 
 ## SQL AND & OR 运算符
 
-```
+```sql
 SELECT * FROM Websites
 WHERE country='CN'
 AND alexa > 50;
@@ -104,7 +104,7 @@ AND (country='CN' OR country='USA');
 - **ASC**：表示按升序排序。
 - **DESC**：表示按降序排序。
 
-```
+```sql
 SELECT * FROM Websites
 ORDER BY alexa;
 
@@ -119,7 +119,7 @@ ORDER BY country,alexa;
 
 ## SQL INSERT INTO 语法
 
-```
+```sql
 INSERT INTO Websites (name, url, alexa, country)
 VALUES ('百度','https://www.baidu.com/','4','CN');
 
@@ -131,7 +131,7 @@ VALUES ('stackoverflow', 'http://stackoverflow.com/', 'IND');
 
 ## SQL UPDATE 语法
 
-```
+```sql
 UPDATE Websites 
 SET alexa='5000', country='USA' 
 WHERE name='菜鸟教程';
@@ -141,7 +141,7 @@ WHERE name='菜鸟教程';
 
 ## SQL DELETE 语法
 
-```
+```sql
 DELETE FROM Websites
 WHERE name='Facebook' AND country='USA';
 
